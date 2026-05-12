@@ -8,8 +8,8 @@ Her görsel yatay **3 panel**: **orijinal** → **hedef domaine çeviri** → **
 
 | Örnek | Örnek | Örnek |
 |:---:|:---:|:---:|
-| ![comparison_0000](assets/comparison_0000.jpg) | ![comparison_0001](assets/comparison_0001.jpg) | ![comparison_0003](assets/comparison_0003.jpg) |
-| ![comparison_0004](assets/comparison_0004.jpg) | ![comparison_0007](assets/comparison_0007.jpg) | ![comparison_0011](assets/comparison_0011.jpg) |
+
+| ![comparison_0004](assets/comparison_0004.jpg) | ![comparison_0011](assets/comparison_0011.jpg) |
 | ![comparison_0014](assets/comparison_0014.jpg) | ![comparison_0074](assets/comparison_0074.jpg) | ![comparison_0103](assets/comparison_0103.jpg) |
 
 > Görselleri `.png` olarak kaydettiysen, yukarıdaki yollarda uzantıyı `.png` yap.
