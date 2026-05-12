@@ -101,57 +101,6 @@ Fashion-MNIST eğitimi (`train_fashion.py`), üretim (`generate.py`, `generate_f
 
 ---
 
-## Örnek görseller nereye konur?
 
-1. Repo kökünde **`assets/`** klasörüne koy.
-2. README, **`checkpoint_karsilastirma.py` / test çıktılarıyla uyumlu** şu isimleri kullanır (3 panelli şeritler):
-   - `comparison_0000.jpg` … `comparison_0103.jpg` (senin kullandığın set: 9 dosya, `comparison_*.jpg` veya `.png`)
-3. `cyclegan/` altında örneğin `cyclegan_day2night_results/checkpoint_comparison_epoch_*/day2night/` veya `night2day/` içindeki `comparison_XXXX.jpg` dosyalarını buraya kopyalayabilirsin; README’deki numaraları değiştirdiysen üstteki tabloda dosya adlarını da güncelle.
 
-Dosya boyutu büyükse GitHub için kalite / çözünürlük düşürmeyi düşünebilirsin.
 
----
-
-## GitHub’a ne yüklemeli, ne yüklememeli?
-
-**Yükle (önerilen):**
-
-- Tüm `.py` kaynakları, `requirements.txt`, bu `README.md`
-- `assets/` içindeki örnek görseller
-- `mnist_gan/`, `cyclegan/` altındaki kod ve `.md` rehberleri
-- İstersen küçük örnek veri veya örnek çıktı (boyuta dikkat)
-
-**Genelde yükleme:**
-
-- `.venv/` veya sanal ortam klasörü
-- `__pycache__/`, IDE ayarları
-- Çok büyük eğitim veri setleri (Git LFS veya harici link düşün)
-- Onlarca megabaytı aşan checkpoint’ler — `.gitignore` zaten `*.pt`, `*.pth` ve `checkpoints/` için uyarıyor; eğitilmiş modeli paylaşacaksan [Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) veya Drive/Hugging Face kullanmak daha uygun
-
-Mevcut `.gitignore` eğitim çıktıları ve checkpoint’leri dışlamaya göre ayarlanmış; `assets/` altındaki örnek görseller özellikle takip edilecek şekilde açılmıştır.
-
----
-
-## Konular (GitHub Topics) önerisi
-
-`pytorch`, `gan`, `cyclegan`, `image-to-image-translation`, `day-to-night`, `deep-learning`, `computer-vision`, `python`
-
----
-
-## İngilizce kısa özet
-
-> PyTorch implementations of GAN variants (Vanilla, DCGAN, cGAN, WGAN) and **CycleGAN for unpaired day↔night (and similar) image translation**, with training scripts, optional Gradio UI, and FID/Inception-style evaluation helpers. **Sample results** live in `assets/`.
-
----
-
-## Sorun giderme
-
-| Sorun | Çözüm |
-|--------|--------|
-| `torch` bulunamıyor | `pip install torch torchvision` |
-| CycleGAN verisi yok | `cyclegan/CYCLEGAN_BASLANGIC.md` |
-| README’de görseller görünmüyor | `assets/` içinde doğru dosya adları + commit + push |
-
----
-
-İç klasörlerdeki `README.md` ve `CYCLEGAN_BASLANGIC.md` dosyaları daha ayrıntılı kullanım içindir.
